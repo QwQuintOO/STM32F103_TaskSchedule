@@ -136,10 +136,7 @@ int main(void)
   while (1)
   {
     TaskHandler();
-
-    key_app_task () ; 
-
-
+    
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
