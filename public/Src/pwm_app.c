@@ -4,7 +4,7 @@ uint8_t mode = 0;
 
 void pwm_app_Man (void)
 { 
-     __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_1, pwm_duty*10 );
+     __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, pwm_duty*10 );
 }
 
 void pwm_app_Auto (void)
@@ -14,7 +14,7 @@ void pwm_app_Auto (void)
      if (flag == 0) 
      {
          pwm_duty += 10 ;
-         __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_1, pwm_duty*10 );
+         __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, pwm_duty*10 );
  
          if (pwm_duty >= 100) 
          {
@@ -25,7 +25,7 @@ void pwm_app_Auto (void)
      else if (flag == 1)
      {
           pwm_duty -= 10 ;
-          __HAL_TIM_SetCompare(&htim2, TIM_CHANNEL_1, pwm_duty*10 );
+          __HAL_TIM_SetCompare(&htim3, TIM_CHANNEL_1, pwm_duty*10 );
 
          if (pwm_duty <= 0)
          {
