@@ -15,19 +15,13 @@ typedef enum
 	LONG 
 }key_state ;
 
-typedef struct
-{
-uint32_t current_time ;
-uint32_t last_time ; 
-
-}Key_time ;
 
 typedef struct{
 	
 	_Bool     	gpio ; 
 	key_state 	state ; 
 	char 		kind ; 
-	Key_time    time ;
+	uint8_t     count  ; 
 
 }KEY ; 
 
