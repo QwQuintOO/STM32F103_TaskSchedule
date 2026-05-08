@@ -19,7 +19,7 @@ void oled_app_task (void)
 }
  
 static TaskComps_stu g_TaskComps[] = {
-		{false, 10,	10, key_interupt},		//任务一
+		{false, 10,	10, key_app_task},		//任务一
 		{false, 100,100,adc_app_task},    //任务二
 		{false, 1000,1000, pwm_app_task},	//任务三
 		{false, 1000,1000, oled_app_task},    //任务四

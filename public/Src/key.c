@@ -2,6 +2,8 @@
 
 KEY   key[2] ; 
 
+
+
 void key_Init (void)
 {
 	key[0].gpio = 0 ,key[0].state = 0 , key[0].kind = 'n' , key[0].count = 0 ; 
