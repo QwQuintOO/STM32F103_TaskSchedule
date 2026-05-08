@@ -13,10 +13,8 @@ void oled_app_task (void)
 {
 		if (mode == 0 )  OLED_Show_String (1 , 1 , (uint8_t*)"MAN ") ; 
 		else if (mode == 1 )   OLED_Show_String (1 , 1 , (uint8_t*)"AUTO") ;
-	
-		OLED_Show_String (1 , 3 ,(uint8_t*)"ADC_Voltage:" ) ; 
+
 		OLED_Show_String (1 , 5 ,(uint8_t*)"PWM_Duty:" ) ;
-		OLED_Show_Float  (97 , 3 , adc_voltage , 1 , 2  ) ;
 		OLED_Show_Num 	 (73 , 5 , pwm_duty , 3 ) ; 
 }
  
@@ -24,7 +22,7 @@ static TaskComps_stu g_TaskComps[] = {
 		{false, 10,	10, key_app_task},		//任务一
 		{false, 100,100,adc_app_task},    //任务二
 		{false, 1000,1000, pwm_app_task},	//任务三
-		{false, 500,500, oled_app_task},    //任务四
+		{false, 1000,1000, oled_app_task},    //任务四
 };
 
 

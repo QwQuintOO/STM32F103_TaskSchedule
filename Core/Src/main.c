@@ -126,7 +126,12 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  printf("Hello World!\r\n") ;
+  	if (mode == 0 )  OLED_Show_String (1 , 1 , (uint8_t*)"MAN ") ; 
+		else if (mode == 1 )   OLED_Show_String (1 , 1 , (uint8_t*)"AUTO") ;
+		OLED_Show_String (1 , 3 ,(uint8_t*)"ADC_Voltage:" ) ; 
+		OLED_Show_String (1 , 5 ,(uint8_t*)"PWM_Duty:" ) ;
+		OLED_Show_Float  (97 , 3 , 0.00f , 1 , 2  ) ;
+		OLED_Show_Num 	 (73 , 5 , 000 , 3 ) ; 
 
   while (1)
   {

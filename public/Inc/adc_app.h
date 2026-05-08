@@ -3,6 +3,8 @@
 
 #include "stm32f1xx_hal.h"
 #include "adc.h"
+#include "oled.h"
+#include "uart_stdio.h"
 
 void adc_app_Init (void)  ;
 void adc_app_task (void)  ; 

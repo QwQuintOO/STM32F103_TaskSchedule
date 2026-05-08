@@ -15,6 +15,10 @@ void adc_app_task (void)
     adc_value = HAL_ADC_GetValue(&hadc1);
 
     adc_voltage = (float)adc_value * 3.3f / 4096.0f;
+
+   OLED_Show_String (1 , 3 ,(uint8_t*)"ADC_Voltage:" ) ; 
+   OLED_Show_Float  (97 , 3 , adc_voltage , 1 , 2  ) ;
+
 }
 
 void adc_calibrated (void)
