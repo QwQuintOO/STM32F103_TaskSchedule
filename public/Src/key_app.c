@@ -1,8 +1,7 @@
 #include "key_app.h"  
 void key_app_task (void)
 {
-  key_interupt () ;
-
+  
 	if (key[0].kind== 's')
 	  {     
       printf ("adc的数值为:%.2f\n", adc_voltage ) ; 

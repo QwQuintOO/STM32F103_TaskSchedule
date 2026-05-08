@@ -13,7 +13,7 @@ typedef struct{
 	_Bool     	gpio ; 
 	uint8_t 	state ; 
 	char 		kind ; 
-	uint16_t	count ; 
+	uint8_t     count  ; 
 
 }KEY ; 
 
