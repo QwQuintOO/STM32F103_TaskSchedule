@@ -17,8 +17,6 @@ void TaskTimeSlice(void) ;
 
 void TaskHandler(void) ; 
 
-void task1_key (void) ; 
-
 void oled_app_task (void) ; 
 
 

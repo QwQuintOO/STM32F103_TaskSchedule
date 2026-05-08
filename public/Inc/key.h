@@ -6,6 +6,8 @@
 #include "stdio.h"
 #include "stdbool.h"
 
+
+
 typedef struct{
 	
 	_Bool gpio ; 

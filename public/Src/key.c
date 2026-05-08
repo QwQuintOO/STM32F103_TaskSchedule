@@ -28,15 +28,15 @@ void key_interupt (void)
 			case 1 :
 				if (key[i].gpio == 1)
 				{
-					if(key[i].count < 100 ) key[i].kind = 's' ; 
+					if(key[i].count < 50 ) key[i].kind = 's' ; 
 					
-					else if (key[i].count > 100) key[i].kind = 'l' ; 
+					else if (key[i].count >= 50) key[i].kind = 'l' ; 
 					
 					key[i].count = 0 ; 
 					
 					key[i].state = 0 ; 
 				}
-				else key[i].count ++ ; 
+				else key[i].count ++ ; ; 
 				
 				break ;
 			default : break ; 	
