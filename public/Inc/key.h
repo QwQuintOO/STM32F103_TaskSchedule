@@ -6,18 +6,12 @@
 #include "stdio.h"
 #include "stdbool.h"
 
-typedef enum 
-{
-	IDLE  , 
-	DEBOUNCE ,
-	SINGLE , 
-	LONG 
-}key_state ;
+
 
 typedef struct{
 	
 	_Bool     	gpio ; 
-	key_state 	state ; 
+	uint8_t 	state ; 
 	char 		kind ; 
 	uint16_t	count ; 
 
