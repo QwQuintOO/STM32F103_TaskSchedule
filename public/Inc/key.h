@@ -10,16 +10,24 @@ typedef enum
 {
 	IDLE  , 
 	DEBOUNCE ,
+	PRESSED ,
 	SINGLE , 
 	LONG 
 }key_state ;
+
+typedef struct
+{
+uint32_t current_time ;
+uint32_t last_time ; 
+
+}Key_time ;
 
 typedef struct{
 	
 	_Bool     	gpio ; 
 	key_state 	state ; 
 	char 		kind ; 
-	uint16_t	count ; 
+	Key_time    time ;
 
 }KEY ; 
 
