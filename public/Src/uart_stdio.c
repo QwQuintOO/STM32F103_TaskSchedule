@@ -30,7 +30,7 @@ void uart_stdio_Init (void)
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-	if (huart->Instance == USART1 )
+	if (huart->Instance == USART1 && mode == 0  )
 	{ 
 	 if (buffer[0] == '\r' || buffer[0] == '\n')   //
       {

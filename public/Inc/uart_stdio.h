@@ -7,6 +7,8 @@
 #include "unistd.h"
 #include "string.h"
 
+#include "pwm_app.h"
+
 extern int pwm_duty ; 
 
 int _write (int fd , char*ptr , int len) ; 
