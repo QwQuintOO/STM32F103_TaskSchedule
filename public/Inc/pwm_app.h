@@ -5,7 +5,6 @@
 #include "tim.h"
 #include "uart_stdio.h"
 
-
 void pwm_app_task (void) ; 
 
 void pwm_app_Auto (void) ; 
